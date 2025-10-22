@@ -677,41 +677,62 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" style="padding: 4rem 2rem; background: rgba(99, 102, 241, 0.05); backdrop-filter: blur(10px);">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title">👨‍💻 À PROPOS DE MOI</h2>
-            <p class="section-subtitle">
-                Développeur web passionné, spécialisé en front-end et en design UI/UX
-            </p>
-            
-            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: center;">
-                <div style="text-align: center;">
-                    <img src="photo1.jpg" alt="Neal TOKPO" style="width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4); object-fit: cover; border: 4px solid rgba(99, 102, 241, 0.3);">
-                    <h3 style="margin-top: 1rem; color: var(--text-light);">Neal TOKPO</h3>
-                    <p style="color: var(--secondary-color);">Développeur Fullstack</p>
-                </div>
-                
-                <div>
-                    <p style="margin-bottom: 1rem; font-size: 1.1rem; color: #cbd5e1; line-height: 1.7;">
-                        Développeur web passionné depuis plus de 3 ans, je me spécialise dans la création 
-                        d'applications web modernes et performantes. Mon expertise couvre le développement 
-                        front-end avec React, le back-end avec Node.js, et le design UI/UX.
-                    </p>
-                    <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #cbd5e1; line-height: 1.7;">
-                        J'aime relever des défis techniques et créer des solutions qui améliorent 
-                        l'expérience utilisateur. Toujours en veille technologique, je m'adapte 
-                        rapidement aux nouvelles tendances du développement web.
-                    </p>
-                    <a href="assets/mon-cv.pdf">
-                    <button style="background: var(--gradient-accent); color: var(--text-light); border: none; padding: 1rem 2rem; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
-                        <i class="fas fa-download"></i> Télécharger mon CV
-                    </button>
-                    </a>
-                </div>
+   <!-- About Section -->
+<section id="about" style="padding: 4rem 2rem; background: rgba(99, 102, 241, 0.05); backdrop-filter: blur(10px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 class="section-title">👨‍💻 À PROPOS DE MOI</h2>
+        <p class="section-subtitle">
+            Développeur web passionné, spécialisé en front-end et en design UI/UX
+        </p>
+
+        <!-- Grille About -->
+        <div class="about-grid">
+            <div style="text-align: center;">
+                <img src="photo1.jpg" alt="Neal TOKPO" 
+                     style="width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4); object-fit: cover; border: 4px solid rgba(99, 102, 241, 0.3);">
+                <h3 style="margin-top: 1rem; color: var(--text-light);">Neal TOKPO</h3>
+                <p style="color: var(--secondary-color);">Développeur Fullstack</p>
+            </div>
+
+            <div>
+                <p style="margin-bottom: 1rem; font-size: 1.1rem; color: #cbd5e1; line-height: 1.7;">
+                    Développeur web passionné depuis plus de 3 ans, je me spécialise dans la création 
+                    d'applications web modernes et performantes. Mon expertise couvre le développement 
+                    front-end avec React, le back-end avec Node.js, et le design UI/UX.
+                </p>
+                <p style="margin-bottom: 2rem; font-size: 1.1rem; color: #cbd5e1; line-height: 1.7;">
+                    J'aime relever des défis techniques et créer des solutions qui améliorent 
+                    l'expérience utilisateur. Toujours en veille technologique, je m'adapte 
+                    rapidement aux nouvelles tendances du développement web.
+                </p>
+                <a href="assets/mon-cv.pdf">
+                <button style="background: var(--gradient-accent); color: var(--text-light); border: none; padding: 1rem 2rem; border-radius: var(--border-radius); font-weight: 600; cursor: pointer; transition: var(--transition); box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </button>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Styles Responsive -->
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        /* Mobile : image au-dessus du texte */
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+        }
+    </style>
+</section>
 
     <!-- Experience Section -->
     <section id="experience" style="padding: 4rem 2rem; background: rgba(30, 41, 59, 0.3);">

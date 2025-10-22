@@ -326,3 +326,80 @@ Votre portfolio est maintenant modernisé avec React ! Vous avez une base solide
     </div>
 </section>
 
+<!-- About Section -->
+    <section id="about" style="padding: 4rem 2rem; background: rgba(99, 102, 241, 0.05); backdrop-filter: blur(10px);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title">👨‍💻 À PROPOS DE MOI</h2>
+            <p class="section-subtitle">
+                Développeur web passionné, spécialisé en front-end et en design UI/UX
+            </p>
+            
+            <div class="about-container" style="display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: start;">
+                <!-- Card principale avec image et contenu -->
+                <div style="background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(15px); border-radius: 25px; padding: 3rem; border: 1px solid rgba(99, 102, 241, 0.3); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);">
+                    <div style="display: grid; grid-template-columns: 300px 1fr; gap: 3rem; align-items: center;">
+                        <!-- Image et nom -->
+                        <div style="text-align: center;">
+                            <div style="position: relative; display: inline-block; margin-bottom: 1.5rem;">
+                                <img src="photo1.jpg" alt="Neal TOKPO" style="width: 250px; height: 250px; border-radius: 50%; box-shadow: 0 15px 35px rgba(99, 102, 241, 0.5); object-fit: cover; border: 5px solid rgba(99, 102, 241, 0.4);">
+                            </div>
+                            <h3 style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 1.5rem; font-weight: 700;">Neal TOKPO</h3>
+                            <p style="color: var(--secondary-color); font-size: 1.1rem; margin-bottom: 1rem;">Développeur Fullstack</p>
+                            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 1.5rem;">
+                                <a href="#" style="width: 45px; height: 45px; background: rgba(99, 102, 241, 0.2); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition); border: 1px solid rgba(99, 102, 241, 0.3);">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" style="width: 45px; height: 45px; background: rgba(99, 102, 241, 0.2); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition); border: 1px solid rgba(99, 102, 241, 0.3);">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" style="width: 45px; height: 45px; background: rgba(99, 102, 241, 0.2); color: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: var(--transition); border: 1px solid rgba(99, 102, 241, 0.3);">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Contenu texte -->
+                        <div>
+                            <div style="margin-bottom: 2rem;">
+                                <h4 style="color: var(--accent-color); font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="fas fa-user-circle"></i> Mon Parcours
+                                </h4>
+                                <p style="margin-bottom: 1rem; font-size: 1.1rem; color: #cbd5e1; line-height: 1.8;">
+                                    Développeur web passionné depuis plus de 3 ans, je me spécialise dans la création 
+                                    d'applications web modernes et performantes. Mon expertise couvre le développement 
+                                    front-end avec React, le back-end avec Node.js, et le design UI/UX.
+                                </p>
+                                <p style="margin-bottom: 0; font-size: 1.1rem; color: #cbd5e1; line-height: 1.8;">
+                                    J'aime relever des défis techniques et créer des solutions qui améliorent 
+                                    l'expérience utilisateur. Toujours en veille technologique, je m'adapte 
+                                    rapidement aux nouvelles tendances du développement web.
+                                </p>
+                            </div>
+                            
+                            <!-- Stats -->
+                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                                <div style="text-align: center; padding: 1rem; background: rgba(99, 102, 241, 0.1); border-radius: 15px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-color); margin-bottom: 0.5rem;">3+</div>
+                                    <div style="font-size: 0.9rem; color: var(--secondary-color);">Années d'expérience</div>
+                                </div>
+                                <div style="text-align: center; padding: 1rem; background: rgba(236, 72, 153, 0.1); border-radius: 15px; border: 1px solid rgba(236, 72, 153, 0.2);">
+                                    <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color); margin-bottom: 0.5rem;">15+</div>
+                                    <div style="font-size: 0.9rem; color: var(--secondary-color);">Projets réalisés</div>
+                                </div>
+                                <div style="text-align: center; padding: 1rem; background: rgba(99, 102, 241, 0.1); border-radius: 15px; border: 1px solid rgba(99, 102, 241, 0.2);">
+                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent-color); margin-bottom: 0.5rem;">10+</div>
+                                    <div style="font-size: 0.9rem; color: var(--secondary-color);">Technologies maîtrisées</div>
+                                </div>
+                            </div>
+                            
+                            <a href="assets/mon-cv.pdf" style="text-decoration: none;">
+                                <button style="background: var(--gradient-accent); color: var(--text-light); border: none; padding: 1.2rem 2.5rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: var(--transition); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4); font-size: 1.1rem; display: inline-flex; align-items: center; gap: 0.8rem;">
+                                    <i class="fas fa-download"></i> Télécharger mon CV
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
